@@ -1,0 +1,8 @@
+#parrafo-3{/*deberia ser solo para un elemento, id=..*/
+    color:brown;
+    font-weight: bold;
+}
+
+.parrafo-2{ 
+    color:blueviolet; 
+}

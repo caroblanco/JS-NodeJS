@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>HTML 01</title>
+        <link rel="stylesheet" href="../css/style.css"/>
     </head>
     <body>
         <header>
@@ -15,19 +16,99 @@
         <main>
             <div>
                 <h1>BUUUUUUUUUUUUUUUUU</h1>
-                <p>
+                <p class="parrafo-2">
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati quas, at, dolorem eum corporis earum culpa laboriosam ullam libero consectetur rerum magni, eos nobis hic deleniti error cupiditate perferendis laborum! <span>Nisi sit laboriosam eligendi,</span> ullam quae aspernatur iste eos aperiam eius optio velit. Architecto consequuntur libero voluptatibus quidem perspiciatis dolorum sunt earum.
                 </p>
                 <a href="https://google.com" target="_blank">Google</a>
             </div>
         </main>
 
-        <section>
+        <section id="parrafo-3">
             SECCIONES, PUEDEN IR ADENTRO DEL MAIN
+            <ol>LISTA ORDENADA
+                <li>item de la lista</li>
+                <li>uno</li>
+                <li>dos</li>
+                <li>tres</li>
+            </ol>
+            <ul>LISTA DESORDENADA
+                <li>uno</li>
+                <li>dos</li>
+                <li>tres</li>
+            </ul>
         </section>
+
+        <section>
+            <h2>TABLE</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Carolina</td>
+                        <td>Blanco</td>
+                    </tr>
+                    <tr>
+                        <td>Juan</td>
+                        <td>Blanco</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section>
+            <picture>
+                <source
+                    media ="(min-width:1024px)"
+                    srcset="https://picsum.photos/200"
+                />
+                <source
+                    media ="(min-width:768px)"
+                    srcset="https://picsum.photos/200"
+                />
+                <img
+                src="https://picsum.photos/200"
+                />
+            </picture>
+        </section>
+        
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.1208568650773!2d-58.3825037!3d-34.6011053!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccac627f1a189%3A0xb875c10e7634945d!2sTeatro%20Col%C3%B3n%2C%20Cerrito%20628%2C%20C1049AAN%20CABA!5e0!3m2!1ses-419!2sar!4v1691679906772!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+
+        <form action="" method="post" enctype="application/x-www-form-urlencoded">
+            <div>
+                <label for="nombre">Nombre: </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+            </div>
+            <div>
+                <label for="contra">Contra: </label>
+                <input type="password" name="contra" id="contra" placeholder="Contrasenia" required>
+            </div>
+                <div>
+                    <label for="mensaje">Mensaje: </label>
+                    <textarea name="mensaje" id="mensaje" cols="30" rows="5" placeholder="Escriba aqui!"></textarea>
+                </div>
+            <div>
+                <label for="provincia">Provincia: </label>
+                <select name="provincia" id="provincia">
+                    <option value=""></option>
+                    <option value="ba">Buenos Aires</option>
+                    <option value="cba">Cordoba</option>
+                    <option value="nqn">Neuquen</option>
+                </select>
+            </div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar todo</button>
+        </form>
 
         <footer>
             FOOTER
         </footer>
+        <script src="../js/script.js"></script>
     </body>
 </html>
